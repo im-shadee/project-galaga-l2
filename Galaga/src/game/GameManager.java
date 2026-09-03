@@ -1,6 +1,9 @@
 package game;
 
 import ui.UIManager;
+
+import java.io.File;
+
 import engine.StdDraw;
 import engine.utilities.DVector2;
 import engine.utilities.FileInterpreter;
@@ -59,7 +62,7 @@ public class GameManager {
         // Draws the current level's name on the screen
         UIManager.drawLevel(currentLevel);
 
-        String[] lvlSettings = FileInterpreter.ReadFile(FilePaths.lvlPath() + "\\level" + currentLevel + ".lvl")
+        String[] lvlSettings = FileInterpreter.ReadFile(FilePaths.lvlPath() + File.separator + "level" + currentLevel + ".lvl")
                 .split("\n")[0].split(" ");
 
         currentGameInstance = new Game(
@@ -141,7 +144,7 @@ public class GameManager {
 
         // Checks if a levelX file exists in the level directory
         boolean existsNextLevel = FileInterpreter.existsFileIn(FilePaths.lvlPath(),
-                ("\\level" + currentLevel + ".lvl"));
+                ("level" + currentLevel + ".lvl"));
 
         if (!existsNextLevel) {
             endGame(true); // We reached the end of the game whilst still alive, we draw the winning screen

@@ -1,5 +1,6 @@
 package game;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -66,7 +67,7 @@ public class Game {
     public void initFormation(double fSpeed) {
 
         String[] content = FileInterpreter
-                .ReadFile(FilePaths.lvlPath() + "\\level" + GameManager.getCurrentLevel() + ".lvl")
+                .ReadFile(FilePaths.lvlPath() + File.separator + "level" + GameManager.getCurrentLevel() + ".lvl")
                 .split("\n");
 
         enemyFormation = new Formation(content.length - 1, fSpeed);

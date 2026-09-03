@@ -1,6 +1,7 @@
 package engine.utilities;
 
 import java.awt.Color;
+import java.io.File;
 
 import engine.StdDraw;
 
@@ -45,7 +46,7 @@ public class Sprite {
 
     public void store() {
 
-        String filePath = FilePaths.sprPath() + "\\" + spriteFile;
+        String filePath = FilePaths.sprPath() + File.separator + spriteFile;
         String[] pixels = FileInterpreter.ReadFile(filePath).split("\n");
 
         height = pixels.length;
