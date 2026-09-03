@@ -2,6 +2,15 @@
 
 ## A Java game inspired by Galaga written for my Object-Oriented-Programming class' final project in Year 2 of Computer Science.
 
+<img width="375" height="375" alt="image" src="https://github.com/user-attachments/assets/8498e86e-1a5a-4c81-ba0c-a9cf2a0a97ac" />
+
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/a4d25eeb-ab07-48ca-b3eb-fd80f0a61098" />
+
+<img width="282" height="316" alt="image" src="https://github.com/user-attachments/assets/5b910a7f-3b7a-418c-b7a5-bbee92d16da8" />
+
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/dff7964c-278a-4bae-a133-b497f5487fb2" />
+
+
 ## 💭​ How to play?
 ### User Interface
 The screen is split between 3 sections, including:
@@ -16,7 +25,6 @@ The screen is split between 3 sections, including:
 | Space | Shoot |
 | I | Toggle debug mode |
 | P | Skip level |
-
 
 > DEBUG MODE displays the colliders of each actor (enemies, player, projectiles...). **Press the 'I' key on your keyboard to toggle DEBUG MODE.**
 
